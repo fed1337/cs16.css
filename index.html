@@ -1,532 +1,652 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/cs16.min.css" />
-    <link rel="stylesheet" href="/src/index.css" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="title" content="cs16.css" />
-    <meta
-      name="description"
-      content="CSS library based on Counter Strike 1.6 UI."
-    />
-    <meta name="keywords" content="cs 1.6, cs 1.6 css, retro css" />
-    <meta name="author" content="Samuel Breznjak" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>cs16.css preview</title>
+    <link href="https://cdn.jsdelivr.net/npm/gardevoir" rel="stylesheet"/>
+    <link href="/src/cs16.css" rel="stylesheet"/>
+    <link href="/src/index.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <h1>cs16.css</h1>
+    <p>Counter Strike 1.6 UI components</p>
+</header>
 
-    <meta property="og:title" content="cs16.css" />
-    <meta
-      property="og:description"
-      content="CSS library based on Counter Strike 1.6 UI."
-    />
-    <meta property="og:image" content="/preview.png" />
-    <meta property="og:site_name" content="cs16.css" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:image:alt"
-      content="CSS library based on Counter Strike 1.6 UI."
-    />
+<main>
+    <section id="typography">
+        <h2>Typography</h2>
+        <p>
+            Body text uses Tahoma. Visit the
+            <a href="https://github.com/ekmas/cs16.css">original cs16.css repo</a>
+            or a <a href="#typography">visited link</a>.
+        </p>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <p><small>Heading 1 is in the page header; heading 2 titles each section below.</small></p>
+        <ul>
+            <li>Assault rifle</li>
+            <li>AWP</li>
+            <li>Desert Eagle</li>
+        </ul>
+        <ol>
+            <li>Buy menu</li>
+            <li>Choose team</li>
+            <li>Spawn</li>
+        </ol>
+        <p>
+            Inline <code>bind "f" "flashlight"</code>,
+            <kbd>Enter</kbd>, <samp>Client connected</samp>,
+            <strong>bold accent</strong>, and <em>emphasis</em>.
+        </p>
+        <pre>hostname "cs16.css server"
+sv_cheats 0
+mp_friendlyfire 1</pre>
+        <blockquote>Fair play. Good luck have fun.</blockquote>
+        <table>
+            <thead>
+            <tr>
+                <th>Weapon</th>
+                <th>Cost</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>AK-47</td>
+                <td>$2500</td>
+            </tr>
+            <tr>
+                <td>M4A1</td>
+                <td>$3100</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>
+            <img alt="Placeholder map thumbnail" height="60"
+                 src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Crect width='120' height='60' fill='%233e4637'/%3E%3Ctext x='8' y='34' fill='%23a0aa95' font-family='tahoma' font-size='12'%3Ede_dust2%3C/text%3E%3C/svg%3E"
+                 width="120"/>
+        </p>
+        <p>
+            <mark>Highlighted</mark>
+            ,
+            <small>small caption</small>,
+            H<sub>2</sub>O,
+            x<sup>2</sup>,
+            <abbr title="Counter-Strike">CS</abbr>
+        </p>
+        <dl>
+            <dt>Round time</dt>
+            <dd>1:45</dd>
+            <dt>Freeze time</dt>
+            <dd>0:06</dd>
+        </dl>
+    </section>
 
-    <title>cs16.css</title>
-  </head>
-  <body>
-    <header>
-      <div class="top">
-        <h1>cs16.css</h1>
-
-        <div class="links">
-          <a
-            href="https://github.com/ekmas/cs16.css"
-            target="_blank"
-            class="cs-btn gh"
-          ></a>
-          <a
-            href="https://x.com/samuelbreznjak"
-            target="_blank"
-            class="cs-btn x"
-          ></a>
-        </div>
-      </div>
-      <p>CSS library based on Counter Strike 1.6 UI.</p>
-    </header>
-
-    <div style="margin-bottom: 10px" class="installation">
-      <h2>Installation</h2>
-
-      <p>
-        You can install cs16.css simply by pasting this to your html `head` tag:
-      </p>
-
-      <div class="code-block">
-        <div class="inner">
-          <button class="cs-btn">Copy</button>
-
-          <pre><code id="code-block">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/gh/ekmas/cs16.css@main/css/cs16.min.css&quot;&gt;</code></pre>
-        </div>
-      </div>
-    </div>
-
-    <main>
-      <div>
-        <h2>Button</h2>
-
-        <button class="cs-btn">Button</button>
-        <button disabled class="cs-btn">Disabled</button>
-
-        <div class="code-block">
-          <button class="cs-btn toggle-vision">Show code</button>
-
-          <div class="inner hidden">
-            <button class="cs-btn">Copy</button>
-
-            <pre><code id="code-block">&lt;button class="cs-btn"&gt;Button&lt;/button&gt;
-&lt;button disabled class="cs-btn"&gt;Disabled&lt;/button&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2>Hr</h2>
-
-        <hr class="cs-hr" />
-
-        <div class="code-block">
-          <button class="cs-btn toggle-vision">Show code</button>
-
-          <div class="inner hidden">
-            <button class="cs-btn">Copy</button>
-
-            <pre><code id="code-block">&lt;hr class=&quot;cs-hr&quot; /&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2>Checkbox</h2>
-
-        <div class="cs-checkbox">
-          <input id="checkbox" type="checkbox" />
-          <label class="cs-checkbox__label" for="checkbox">Checkbox</label>
-        </div>
-
-        <div class="code-block">
-          <button class="cs-btn toggle-vision">Show code</button>
-
-          <div class="inner hidden">
-            <button class="cs-btn">Copy</button>
-
-            <pre><code id="code-block">&lt;div class=&quot;cs-checkbox&quot;&gt;
-  &lt;input id=&quot;checkbox&quot; type=&quot;checkbox&quot; /&gt;
-  &lt;label class=&quot;cs-checkbox__label&quot; for=&quot;checkbox&quot;&gt;Checkbox&lt;/label&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2>Input</h2>
-
-        <input class="cs-input" id="input" type="input" />
-        <label class="cs-input__label" for="input">First name</label>
-
-        <br />
-        <br />
-
-        <input type="text" value="John Doe" class="cs-input" />
-        <input type="text" disabled value="disabled" class="cs-input" />
-
-        <div class="code-block">
-          <button class="cs-btn toggle-vision">Show code</button>
-
-          <div class="inner hidden">
-            <button class="cs-btn">Copy</button>
-
-            <pre><code id="code-block">&lt;input class=&quot;cs-input&quot; id=&quot;input&quot; type=&quot;input&quot; /&gt;
-&lt;label class=&quot;cs-input__label&quot; for=&quot;input&quot;&gt;First name&lt;/label&gt;
-
-&lt;br /&gt;
-&lt;br /&gt;
-
-&lt;input type=&quot;text&quot; value=&quot;John Doe&quot; class=&quot;cs-input&quot; /&gt;
-&lt;input type=&quot;text&quot; disabled value=&quot;disabled&quot; class=&quot;cs-input&quot; /&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2>Select</h2>
-
-        <label class="cs-select__label" for="cars">Choose a car:</label>
-        <select class="cs-select" name="cars" id="cars">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
-        </select>
-
-        <div class="code-block">
-          <button class="cs-btn toggle-vision">Show code</button>
-
-          <div class="inner hidden">
-            <button class="cs-btn">Copy</button>
-
-            <pre><code id="code-block">&lt;label class=&quot;cs-select__label&quot; for=&quot;cars&quot;&gt;Choose a car:&lt;/label&gt;
-&lt;select class=&quot;cs-select&quot; name=&quot;cars&quot; id=&quot;cars&quot;&gt;
-  &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;
-  &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;
-  &lt;option value=&quot;opel&quot;&gt;Opel&lt;/option&gt;
-  &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;
-&lt;/select&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2>Radio Group</h2>
-
-        <fieldset class="cs-fieldset">
-          <legend>What is your favorite wild animal?</legend>
-          <div class="radio-wrapper">
-            <input type="radio" name="animal" id="elephant" />
-            <label for="elephant">Elephant</label>
-          </div>
-          <div class="radio-wrapper">
-            <input type="radio" name="animal" id="monkey" />
-            <label for="monkey">Monkey</label>
-          </div>
-          <div class="radio-wrapper">
-            <input type="radio" name="animal" id="cheetah" />
-            <label for="cheetah">Cheetah</label>
-          </div>
-          <div class="radio-wrapper">
-            <input type="radio" name="animal" id="giraffe" />
-            <label for="giraffe">Giraffe</label>
-          </div>
-        </fieldset>
-
-        <div class="code-block">
-          <button class="cs-btn toggle-vision">Show code</button>
-
-          <div class="inner hidden">
-            <button class="cs-btn">Copy</button>
-
-            <pre><code id="code-block">&lt;fieldset class=&quot;cs-fieldset&quot;&gt;
-  &lt;legend&gt;What is your favorite wild animal?&lt;/legend&gt;
-  &lt;div class=&quot;radio-wrapper&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;animal&quot; id=&quot;elephant&quot; /&gt;
-    &lt;label for=&quot;elephant&quot;&gt;Elephant&lt;/label&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;radio-wrapper&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;animal&quot; id=&quot;monkey&quot; /&gt;
-    &lt;label for=&quot;monkey&quot;&gt;Monkey&lt;/label&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;radio-wrapper&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;animal&quot; id=&quot;cheetah&quot; /&gt;
-    &lt;label for=&quot;cheetah&quot;&gt;Cheetah&lt;/label&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;radio-wrapper&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;animal&quot; id=&quot;giraffe&quot; /&gt;
-    &lt;label for=&quot;giraffe&quot;&gt;Giraffe&lt;/label&gt;
-  &lt;/div&gt;
-&lt;/fieldset&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2>Slider</h2>
-
-        <div class="cs-slider">
-          <div class="value">
-            <p>Dark</p>
-            <p>Light</p>
-          </div>
-          <div class="ruler"></div>
-          <input id="range" type="range" min="1" max="100" value="50" />
-          <label for="range">Brightness</label>
-        </div>
-
-        <div class="code-block">
-          <button class="cs-btn toggle-vision">Show code</button>
-
-          <div class="inner hidden">
-            <button class="cs-btn">Copy</button>
-
-            <pre><code id="code-block">&lt;div class=&quot;cs-slider&quot;&gt;
-  &lt;div class=&quot;value&quot;&gt;
-    &lt;p&gt;Dark&lt;/p&gt;
-    &lt;p&gt;Light&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;ruler&quot;&gt;&lt;/div&gt;
-  &lt;input id=&quot;range&quot; type=&quot;range&quot; min=&quot;1&quot; max=&quot;100&quot; value=&quot;50&quot; /&gt;
-  &lt;label for=&quot;range&quot;&gt;Brightness&lt;/label&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2>Dialog</h2>
-
-        <section>
-          <button
-            type="button"
-            class="cs-btn"
-            onclick="document.querySelector('.cs-dialog').showModal();"
-          >
-            Open dialog
-          </button>
-          <dialog class="cs-dialog">
-            <form method="dialog">
-              <div class="heading">
-                <div class="wrapper">
-                  <div class="icon"></div>
-                  <p class="text">Options</p>
+    <section>
+        <h2>Form</h2>
+        <form id="demo-form">
+            <div class="cs-field">
+                <label for="team">Team name</label>
+                <input id="team" type="text" value="Counter-Terrorists"/>
+            </div>
+            <div class="cs-input-group">
+                <input id="server-ip" placeholder="Server IP" type="text"/>
+                <button type="button">Connect</button>
+            </div>
+            <br/>
+            <fieldset class="cs-checkbox-group">
+                <legend>Game options</legend>
+                <div class="cs-field-check">
+                    <input id="opt-ff" type="checkbox"/>
+                    <label for="opt-ff">Friendly fire</label>
                 </div>
-                <button class="cs-btn close"></button>
-              </div>
-              <div class="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio ad suscipit aut asperiores laudantium error amet
-                sapiente et tempora numquam voluptates, velit sint quos
-                exercitationem unde obcaecati deleniti maiores officia natus
-                ipsa rem fuga commodi esse. Sunt repellendus ipsa illo a
-                accusantium consequuntur nihil dicta necessitatibus porro,
-                saepe, sed repudiandae!
-              </div>
-              <menu class="footer-btns">
-                <button class="cs-btn">OK</button>
-                <button class="cs-btn">Cancel</button>
-                <button class="cs-btn">Apply</button>
-              </menu>
+                <div class="cs-field-check">
+                    <input checked id="opt-hd" type="checkbox"/>
+                    <label for="opt-hd">HD models</label>
+                </div>
+            </fieldset>
+            <div class="cs-field">
+                <label for="cfg-file">Config file</label>
+                <input id="cfg-file" type="file"/>
+            </div>
+            <div class="cs-field">
+                <label for="crosshair-color">Crosshair color</label>
+                <input id="crosshair-color" type="color" value="#c4b550"/>
+            </div>
+            <div class="cs-field">
+                <label for="invalid-name">Player name</label>
+                <input aria-invalid="true" id="invalid-name" type="text" value=""/>
+                <p class="cs-field-error">Name is required.</p>
+            </div>
+            <button type="submit">Save</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Menu</h2>
+        <menu>
+            <li>
+                <button type="button">Join game</button>
+            </li>
+            <li>
+                <button type="button">Spectate</button>
+            </li>
+        </menu>
+    </section>
+
+    <section>
+        <h2>Button</h2>
+        <button type="button">Button</button>
+        <button disabled type="button">Disabled</button>
+        <br/><br/>
+        <div class="cs-button-group" role="group">
+            <button type="button">CT</button>
+            <button type="button">T</button>
+            <button type="button">Spec</button>
+        </div>
+        <br/><br/>
+        <div class="cs-button-group cs-button-group-vertical" role="group">
+            <button type="button">Up</button>
+            <button type="button">Down</button>
+        </div>
+        <br/><br/>
+        <button aria-label="Close" class="cs-close" id="demo-close" type="button"></button>
+    </section>
+
+    <section>
+        <h2>Hr</h2>
+        <hr/>
+    </section>
+
+    <section>
+        <h2>Checkbox</h2>
+        <input id="checkbox" type="checkbox"/>
+        <label for="checkbox">Checkbox</label>
+    </section>
+
+    <section>
+        <h2>Input</h2>
+        <label for="input">First name</label>
+        <input id="input" type="text"/>
+        <br/><br/>
+        <label for="notes">Notes</label>
+        <textarea id="notes" rows="2">Multi-line notes</textarea>
+        <br/><br/>
+        <label for="filled">Name</label>
+        <input id="filled" type="text" value="John Doe"/>
+        <br/><br/>
+        <label for="disabled-input">Disabled</label>
+        <input disabled id="disabled-input" type="text" value="disabled"/>
+    </section>
+
+    <section>
+        <h2>Select</h2>
+        <p>
+            <small>Native single-select popups are OS-rendered. Use <code>.cs-dropdown</code> below for a
+                fully CS-styled list.</small>
+        </p>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option disabled value="saab">Saab (unavailable)</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br/><br/>
+        <label for="maps">Maps (multi-select):</label>
+        <select id="maps" multiple name="maps" size="4">
+            <optgroup label="Bomb sites">
+                <option selected value="dust2">de_dust2</option>
+                <option value="inferno">de_inferno</option>
+            </optgroup>
+            <optgroup label="Hostage">
+                <option value="office">cs_office</option>
+                <option value="italy">cs_italy</option>
+            </optgroup>
+        </select>
+        <br/><br/>
+        <label for="maps-disabled">Disabled select:</label>
+        <select disabled id="maps-disabled">
+            <option>Unavailable</option>
+        </select>
+    </section>
+
+    <section>
+        <h2>Dropdown</h2>
+        <div class="cs-dropdown" id="demo-dropdown" tabindex="-1">
+            <button aria-expanded="false" aria-haspopup="listbox" class="cs-dropdown-trigger" type="button">de_dust2</button>
+            <ul class="cs-dropdown-menu" role="listbox">
+                <li aria-selected="true" role="option">de_dust2</li>
+                <li role="option">de_inferno</li>
+                <li role="option">cs_office</li>
+            </ul>
+        </div>
+        <br/><br/>
+        <details class="cs-dropdown cs-dropdown-details">
+            <summary class="cs-dropdown-trigger">de_inferno</summary>
+            <ul class="cs-dropdown-menu" role="listbox">
+                <li role="option">de_dust2</li>
+                <li aria-selected="true" role="option">de_inferno</li>
+                <li role="option">cs_office</li>
+            </ul>
+        </details>
+    </section>
+
+    <section>
+        <h2>Radio group</h2>
+        <fieldset>
+            <legend>What is your favorite wild animal?</legend>
+            <div>
+                <input id="elephant" name="animal" type="radio"/>
+                <label for="elephant">Elephant</label>
+            </div>
+            <div>
+                <input id="monkey" name="animal" type="radio"/>
+                <label for="monkey">Monkey</label>
+            </div>
+            <div>
+                <input id="cheetah" name="animal" type="radio"/>
+                <label for="cheetah">Cheetah</label>
+            </div>
+            <div>
+                <input id="giraffe" name="animal" type="radio"/>
+                <label for="giraffe">Giraffe</label>
+            </div>
+        </fieldset>
+    </section>
+
+    <section>
+        <h2>Slider</h2>
+        <div class="cs-slider">
+            <div class="value">
+                <p>Dark</p>
+                <p>Light</p>
+            </div>
+            <div class="ruler"></div>
+            <input id="range" max="100" min="1" type="range" value="50"/>
+            <label for="range">Brightness</label>
+        </div>
+    </section>
+
+    <section>
+        <h2>Dialog</h2>
+        <button id="open-dialog" type="button">Open dialog</button>
+        <dialog id="demo-dialog">
+            <form method="dialog">
+                <div class="heading">
+                    <div class="wrapper">
+                        <div class="icon"></div>
+                        <p class="text">Options</p>
+                    </div>
+                    <button aria-label="Close" class="close" type="submit"></button>
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                    ad suscipit aut asperiores laudantium error amet sapiente et tempora
+                    numquam voluptates.
+                </div>
+                <menu>
+                    <li>
+                        <button type="submit">OK</button>
+                    </li>
+                    <li>
+                        <button type="submit">Cancel</button>
+                    </li>
+                    <li>
+                        <button type="submit">Apply</button>
+                    </li>
+                </menu>
             </form>
-          </dialog>
-        </section>
+        </dialog>
+    </section>
 
-        <div class="code-block">
-          <button class="cs-btn toggle-vision">Show code</button>
-
-          <div class="inner hidden">
-            <button class="cs-btn">Copy</button>
-
-            <pre><code id="code-block">&lt;section&gt;
-  &lt;button
-    type=&quot;button&quot;
-    class=&quot;cs-btn&quot;
-    onclick=&quot;document.querySelector(&apos;.cs-dialog&apos;).showModal();&quot;
-  &gt;
-    Open dialog
-  &lt;/button&gt;
-  &lt;dialog class=&quot;cs-dialog&quot;&gt;
-    &lt;form method=&quot;dialog&quot;&gt;
-      &lt;div class=&quot;heading&quot;&gt;
-        &lt;div class=&quot;wrapper&quot;&gt;
-          &lt;div class=&quot;icon&quot;&gt;&lt;/div&gt;
-          &lt;p class=&quot;text&quot;&gt;Options&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;button class=&quot;cs-btn close&quot;&gt;&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;content&quot;&gt;
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Distinctio ad suscipit aut asperiores laudantium error amet
-        sapiente et tempora numquam voluptates, velit sint quos
-        exercitationem unde obcaecati deleniti maiores officia natus
-        ipsa rem fuga commodi esse. Sunt repellendus ipsa illo a
-        accusantium consequuntur nihil dicta necessitatibus porro,
-        saepe, sed repudiandae!
-      &lt;/div&gt;
-      &lt;menu class=&quot;footer-btns&quot;&gt;
-        &lt;button class=&quot;cs-btn&quot;&gt;OK&lt;/button&gt;
-        &lt;button class=&quot;cs-btn&quot;&gt;Cancel&lt;/button&gt;
-        &lt;button class=&quot;cs-btn&quot;&gt;Apply&lt;/button&gt;
-      &lt;/menu&gt;
-    &lt;/form&gt;
-  &lt;/dialog&gt;
-&lt;/section&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-      <div>
+    <section>
         <h2>Tooltip</h2>
-
         <div class="cs-tooltip">
-          Right
-          <span style="left: 125%" class="text">Tooltip text</span>
+            Right
+            <span class="text" style="left: 125%;">Tooltip text</span>
         </div>
-        <br />
+        <br/>
         <div class="cs-tooltip">
-          Left
-          <span style="right: 125%" class="text">Tooltip text</span>
+            Left
+            <span class="text" style="right: 125%;">Tooltip text</span>
         </div>
-        <br />
+        <br/>
         <div class="cs-tooltip">
-          Top
-          <span
-            style="bottom: 100%; width: 100px; left: 50%; margin-left: -50px"
-            class="text"
-            >Tooltip text</span
-          >
-          <!-- set some width, and then set margin-left to be half of the width -->
+            Top
+            <span class="text"
+                  style="bottom: 100%; width: 6.25rem; left: 50%; margin-left: -3.125rem;">Tooltip text</span>
         </div>
-        <br />
+        <br/>
         <div class="cs-tooltip">
-          Bottom
-          <span
-            style="top: 100%; width: 100px; left: 50%; margin-left: -50px"
-            class="text"
-            >Tooltip text</span
-          >
-          <!-- set some width, and then set margin-left to be half of the width -->
+            Bottom
+            <span class="text" style="top: 100%; width: 6.25rem; left: 50%; margin-left: -3.125rem;">Tooltip text</span>
         </div>
+    </section>
 
-        <div class="code-block">
-          <button class="cs-btn toggle-vision">Show code</button>
-
-          <div class="inner hidden">
-            <button class="cs-btn">Copy</button>
-
-            <pre><code id="code-block">&lt;div class=&quot;cs-tooltip&quot;&gt;
-  Right
-  &lt;span style=&quot;left: 125%&quot; class=&quot;text&quot;&gt;Tooltip text&lt;/span&gt;
-&lt;/div&gt;
-&lt;br /&gt;
-&lt;div class=&quot;cs-tooltip&quot;&gt;
-  Left
-  &lt;span style=&quot;right: 125%&quot; class=&quot;text&quot;&gt;Tooltip text&lt;/span&gt;
-&lt;/div&gt;
-&lt;br /&gt;
-&lt;div class=&quot;cs-tooltip&quot;&gt;
-  Top
-  &lt;span
-    style=&quot;bottom: 100%; width: 100px; left: 50%; margin-left: -50px&quot;
-    class=&quot;text&quot;
-    &gt;Tooltip text&lt;/span
-  &gt;
-  &lt;!-- set some width, and then set margin-left to be half of the width --&gt;
-&lt;/div&gt;
-&lt;br /&gt;
-&lt;div class=&quot;cs-tooltip&quot;&gt;
-  Bottom
-  &lt;span
-    style=&quot;top: 100%; width: 100px; left: 50%; margin-left: -50px&quot;
-    class=&quot;text&quot;
-    &gt;Tooltip text&lt;/span
-  &gt;
-  &lt;!-- set some width, and then set margin-left to be half of the width --&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2>Progress Bar</h2>
-
+    <section>
+        <h2>Progress bar</h2>
         <div class="cs-progress-bar">
-          <div style="width: 50%" class="bars"></div>
+            <div class="bars" style="width: 50%;"></div>
         </div>
+        <br/><br/>
+        <label for="download-progress">Download progress</label>
+        <progress id="download-progress" max="100" value="50"></progress>
+    </section>
 
-        <div class="code-block">
-          <button class="cs-btn toggle-vision">Show code</button>
-
-          <div class="inner hidden">
-            <button class="cs-btn">Copy</button>
-
-            <pre><code id="code-block">&lt;div class=&quot;cs-progress-bar&quot;&gt;
-  &lt;div style=&quot;width: 50%&quot; class=&quot;bars&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
+    <section>
+        <h2>Card</h2>
+        <div class="cs-stack cs-stack-md" style="max-width: 18.75rem;">
+            <article class="cs-card">
+                <header class="cs-card-header">
+                    <span class="cs-card-title">AK-47</span>
+                </header>
+                <div class="cs-card-body">
+                    <p>Powerful assault rifle.</p>
+                    <p><strong>$2500</strong></p>
+                </div>
+                <footer class="cs-card-footer">
+                    <button type="button">Buy</button>
+                </footer>
+            </article>
         </div>
-      </div>
-      <div>
+    </section>
+
+    <section>
+        <h2>Badge</h2>
+        <p>
+            <span class="cs-badge">VIP</span>
+            <span class="cs-badge cs-badge-accent">3</span>
+        </p>
+    </section>
+
+    <section>
+        <h2>Alert</h2>
+        <div class="cs-stack">
+            <div class="cs-alert" role="alert">Bomb planted at B.</div>
+            <div class="cs-alert cs-alert-warn" role="alert">Connection unstable.</div>
+            <div class="cs-alert cs-alert-error" role="alert">Connection lost.</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Breadcrumb</h2>
+        <nav aria-label="Breadcrumb">
+            <ol class="cs-breadcrumb">
+                <li><a href="#typography">Home</a></li>
+                <li><a href="#typography">Maps</a></li>
+                <li><span aria-current="page">de_dust2</span></li>
+            </ol>
+        </nav>
+    </section>
+
+    <section>
+        <h2>Pagination</h2>
+        <nav aria-label="Pagination">
+            <ol class="cs-pagination">
+                <li>
+                    <button disabled type="button">Prev</button>
+                </li>
+                <li>
+                    <button aria-current="page" type="button">1</button>
+                </li>
+                <li>
+                    <button type="button">2</button>
+                </li>
+                <li>
+                    <button type="button">3</button>
+                </li>
+                <li>
+                    <button type="button">Next</button>
+                </li>
+            </ol>
+        </nav>
+    </section>
+
+    <section>
+        <h2>List group</h2>
+        <ul class="cs-list-group">
+            <li class="cs-list-group-item">Player 1</li>
+            <li class="cs-list-group-item cs-list-group-item-active">Player 2</li>
+            <li class="cs-list-group-item">Player 3</li>
+        </ul>
+    </section>
+
+    <section id="navbar-demo">
+        <h2>Navbar</h2>
+        <div class="cs-navbar cs-navbar-collapse">
+            <span class="cs-navbar-title">Counter-Strike</span>
+            <input class="cs-navbar-toggle" id="nav-toggle" type="checkbox"/>
+            <label class="cs-navbar-toggler" for="nav-toggle">Menu</label>
+            <menu class="cs-navbar-menu">
+                <li>
+                    <button type="button">New game</button>
+                </li>
+                <li>
+                    <button type="button">Find servers</button>
+                </li>
+                <li>
+                    <button type="button">Options</button>
+                </li>
+            </menu>
+        </div>
+        <p><small>Resize below <code>--nav-break</code> (48rem) to collapse menu. Checkbox toggle, no JS.</small></p>
+    </section>
+
+    <section>
+        <h2>Collapsible</h2>
+        <details class="cs-collapsible">
+            <summary>Advanced options</summary>
+            <div class="cs-collapsible-panel">
+                <p>cl_righthand 1, fps_max 100, net_graph 1</p>
+            </div>
+        </details>
+    </section>
+
+    <section>
+        <h2>Popover</h2>
+        <div class="cs-popover" id="demo-popover" tabindex="-1">
+            <button aria-expanded="false" type="button">Help</button>
+            <div class="cs-popover-body">Press <kbd>E</kbd> to use.</div>
+        </div>
+        <p><small>Click Help to toggle popover.</small></p>
+    </section>
+
+    <section>
+        <h2>Spinner</h2>
+        <span class="cs-spinner" role="status"></span>
+        <span> Loading map…</span>
+    </section>
+
+    <section>
+        <h2>Toast</h2>
+        <p>
+            <button id="toast-info" type="button">Bomb planted</button>
+            <button id="toast-warn" type="button">Connection unstable</button>
+            <button id="toast-error" type="button">Connection lost</button>
+        </p>
+        <div class="cs-toast-stack" id="toast-stack"></div>
+    </section>
+
+    <section>
+        <h2>Switch</h2>
+        <label class="cs-switch">
+            <input role="switch" type="checkbox"/>
+            <span class="cs-switch-track"></span>
+            <span class="cs-switch-label">Friendly fire</span>
+        </label>
+        <br/><br/>
+        <label class="cs-switch">
+            <input checked role="switch" type="checkbox"/>
+            <span class="cs-switch-track"></span>
+            <span class="cs-switch-label">Auto-buy</span>
+        </label>
+    </section>
+
+    <section>
+        <h2>Accordion</h2>
+        <div class="cs-accordion">
+            <details open>
+                <summary>Audio</summary>
+                <div class="cs-accordion-panel">
+                    <p>Volume, quality settings.</p>
+                </div>
+            </details>
+            <details>
+                <summary>Video</summary>
+                <div class="cs-accordion-panel">
+                    <p>Resolution, brightness.</p>
+                </div>
+            </details>
+            <details>
+                <summary>Controls</summary>
+                <div class="cs-accordion-panel">
+                    <p>Key bindings, sensitivity.</p>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <section>
         <h2>Tabs</h2>
-
         <div class="cs-tabs">
-          <input
-            class="radiotab"
-            name="tabs"
-            tabindex="1"
-            type="radio"
-            id="tabone"
-            checked="checked"
-          />
-          <label class="label" for="tabone">Tab One</label>
-          <div class="panel" tabindex="1">
-            <h2>Tab One Content</h2>
-            <p>Tab content...</p>
-          </div>
-          <input
-            class="radiotab"
-            tabindex="1"
-            name="tabs"
-            type="radio"
-            id="tabtwo"
-          />
-          <label class="label" for="tabtwo">Tab Two</label>
-          <div class="panel" tabindex="1">
-            <h2>Tab Two Content</h2>
-            <p>Tab content...</p>
-          </div>
-          <input
-            class="radiotab"
-            tabindex="1"
-            name="tabs"
-            type="radio"
-            id="tabthree"
-          />
-          <label class="label" for="tabthree">Tab Three</label>
-          <div class="panel" tabindex="1">
-            <h2>Tab Three Content</h2>
-            <p>Tab content...</p>
-          </div>
+            <input checked class="radiotab" id="tabone" name="tabs" tabindex="1" type="radio"/>
+            <label class="label" for="tabone">Tab One</label>
+            <div class="panel" tabindex="1">
+                <h3>Tab One Content</h3>
+                <p>Tab content...</p>
+            </div>
+            <input class="radiotab" id="tabtwo" name="tabs" tabindex="1" type="radio"/>
+            <label class="label" for="tabtwo">Tab Two</label>
+            <div class="panel" tabindex="1">
+                <h3>Tab Two Content</h3>
+                <p>Tab content...</p>
+            </div>
+            <input class="radiotab" id="tabthree" name="tabs" tabindex="1" type="radio"/>
+            <label class="label" for="tabthree">Tab Three</label>
+            <div class="panel" tabindex="1">
+                <h3>Tab Three Content</h3>
+                <p>Tab content...</p>
+            </div>
         </div>
+    </section>
+</main>
+<script>
+    (function () {
+        const demoDialog = document.getElementById("demo-dialog");
+        document.getElementById("open-dialog")?.addEventListener("click", () => demoDialog?.showModal());
 
-        <div class="code-block">
-          <button class="cs-btn toggle-vision">Show code</button>
+        document.getElementById("demo-close")?.addEventListener("click", () => {
+            showToast("", "Dismissed", "Close button clicked.");
+        });
 
-          <div class="inner hidden">
-            <button class="cs-btn">Copy</button>
+        const dropdown = document.getElementById("demo-dropdown");
+        if (dropdown) {
+            const trigger = dropdown.querySelector(".cs-dropdown-trigger");
+            const options = dropdown.querySelectorAll('[role="option"]');
 
-            <pre><code id="code-block">&lt;div class=&quot;cs-tabs&quot;&gt;
-  &lt;input
-    class=&quot;radiotab&quot;
-    name=&quot;tabs&quot;
-    tabindex=&quot;1&quot;
-    type=&quot;radio&quot;
-    id=&quot;tabone&quot;
-    checked=&quot;checked&quot;
-  /&gt;
-  &lt;label class=&quot;label&quot; for=&quot;tabone&quot;&gt;Tab One&lt;/label&gt;
-  &lt;div class=&quot;panel&quot; tabindex=&quot;1&quot;&gt;
-    &lt;h2&gt;Tab One Content&lt;/h2&gt;
-    &lt;p&gt;Tab content...&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;input
-    class=&quot;radiotab&quot;
-    tabindex=&quot;1&quot;
-    name=&quot;tabs&quot;
-    type=&quot;radio&quot;
-    id=&quot;tabtwo&quot;
-  /&gt;
-  &lt;label class=&quot;label&quot; for=&quot;tabtwo&quot;&gt;Tab Two&lt;/label&gt;
-  &lt;div class=&quot;panel&quot; tabindex=&quot;1&quot;&gt;
-    &lt;h2&gt;Tab Two Content&lt;/h2&gt;
-    &lt;p&gt;Tab content...&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;input
-    class=&quot;radiotab&quot;
-    tabindex=&quot;1&quot;
-    name=&quot;tabs&quot;
-    type=&quot;radio&quot;
-    id=&quot;tabthree&quot;
-  /&gt;
-  &lt;label class=&quot;label&quot; for=&quot;tabthree&quot;&gt;Tab Three&lt;/label&gt;
-  &lt;div class=&quot;panel&quot; tabindex=&quot;1&quot;&gt;
-    &lt;h2&gt;Tab Three Content&lt;/h2&gt;
-    &lt;p&gt;Tab content...&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </div>
-      </div>
-    </main>
+            dropdown.addEventListener("focusin", () => trigger?.setAttribute("aria-expanded", "true"));
+            dropdown.addEventListener("focusout", (event) => {
+                if (!dropdown.contains(event.relatedTarget)) {
+                    trigger?.setAttribute("aria-expanded", "false");
+                }
+            });
 
-    <footer>
-      Released under MIT License. Made by
-      <a target="_blank" href="http://samke.me">Samuel</a>.
-    </footer>
+            options.forEach((option) => {
+                option.addEventListener("click", () => {
+                    options.forEach((item) => item.setAttribute("aria-selected", "false"));
+                    option.setAttribute("aria-selected", "true");
+                    if (trigger) {
+                        trigger.textContent = option.textContent;
+                    }
+                    trigger?.focus();
+                    option.blur();
+                });
+            });
+        }
 
-    <script type="module" src="./src/main.js"></script>
-  </body>
+        const popover = document.getElementById("demo-popover");
+        const popoverTrigger = popover?.querySelector("button");
+        popoverTrigger?.addEventListener("click", () => {
+            const open = popover.classList.toggle("cs-popover-open");
+            popoverTrigger.setAttribute("aria-expanded", String(open));
+        });
+        document.addEventListener("click", (event) => {
+            if (!popover?.contains(event.target)) {
+                popover?.classList.remove("cs-popover-open");
+                popoverTrigger?.setAttribute("aria-expanded", "false");
+            }
+        });
+
+        const toastStack = document.getElementById("toast-stack");
+
+        function showToast(variant, title, message) {
+            if (!toastStack) {
+                return;
+            }
+
+            const dialog = document.createElement("dialog");
+            dialog.className = variant ? `cs-toast cs-toast-${variant}` : "cs-toast";
+            dialog.innerHTML = `
+                <div class="heading">
+                    <div class="wrapper">
+                        <div class="icon"></div>
+                        <p class="text"></p>
+                    </div>
+                    <button type="button" class="close" aria-label="Close"></button>
+                </div>
+                <div class="content"></div>
+            `;
+            dialog.querySelector(".text").textContent = title;
+            dialog.querySelector(".content").textContent = message;
+
+            const close = () => {
+                if (dialog.open) {
+                    dialog.close();
+                }
+            };
+
+            dialog.querySelector(".close")?.addEventListener("click", close);
+            dialog.addEventListener("close", () => dialog.remove());
+
+            toastStack.appendChild(dialog);
+            dialog.show();
+
+            window.setTimeout(close, 5000);
+        }
+
+        document.getElementById("toast-info")?.addEventListener("click", () => {
+            showToast("", "Bomb planted", "Site B. 40 seconds.");
+        });
+        document.getElementById("toast-warn")?.addEventListener("click", () => {
+            showToast("warn", "Connection unstable", "Retrying…");
+        });
+        document.getElementById("toast-error")?.addEventListener("click", () => {
+            showToast("error", "Connection lost", "Return to main menu.");
+        });
+
+        document.getElementById("demo-form")?.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const nameInput = document.getElementById("invalid-name");
+            if (nameInput && !nameInput.value.trim()) {
+                nameInput.setAttribute("aria-invalid", "true");
+                nameInput.reportValidity?.();
+                nameInput.focus();
+                return;
+            }
+            nameInput?.removeAttribute("aria-invalid");
+            showToast("", "Saved", "Team settings updated.");
+        });
+
+        document.getElementById("invalid-name")?.addEventListener("input", (event) => {
+            if (event.target.value.trim()) {
+                event.target.removeAttribute("aria-invalid");
+            }
+        });
+    })();
+</script>
+</body>
 </html>
