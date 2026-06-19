@@ -28,6 +28,7 @@
     --alert-info: #C4B550;
     --alert-warn: #E8A838;
     --alert-error: #C75050;
+    --alert-success: #5A9A4A;
 
     --space-xs: 0.25rem;
     --space-sm: 0.5rem;
@@ -43,6 +44,10 @@
 
     --select-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='4' viewBox='0 0 7 4'%3E%3Cpath d='M0,0 1,0 1,1 0,1 M1,0 2,0 2,1 1,1 M1,1 2,1 2,2 1,2 M2,1 3,1 3,2 2,2 M2,2 3,2 3,3 2,3 M3,2 4,2 4,3 3,3 M3,3 4,3 4,4 3,4 M3,1 4,1 4,2 3,2 M2,0 3,0 3,1 2,1 M3,0 4,0 4,1 3,1 M4,0 5,0 5,1 4,1 M4,2 5,2 5,3 4,3 M4,1 5,1 5,2 4,2 M5,1 6,1 6,2 5,2 M5,0 6,0 6,1 5,1 M6,0 7,0 7,1 6,1 ' fill='%23a0aa95'/%3E%3C/svg%3E");
     --select-chevron-hover: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='4' viewBox='0 0 7 4'%3E%3Cpath d='M0,0 1,0 1,1 0,1 M1,0 2,0 2,1 1,1 M1,1 2,1 2,2 1,2 M2,1 3,1 3,2 2,2 M2,2 3,2 3,3 2,3 M3,3 4,3 4,4 3,4 M3,2 4,2 4,3 3,3 M3,1 4,1 4,2 3,2 M2,0 3,0 3,1 2,1 M3,0 4,0 4,1 3,1 M4,0 5,0 5,1 4,1 M4,2 5,2 5,3 4,3 M4,1 5,1 5,2 4,2 M5,1 6,1 6,2 5,2 M5,0 6,0 6,1 5,1 M6,0 7,0 7,1 6,1 ' fill='%23ffffff'/%3E%3C/svg%3E");
+
+    --calendar-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M2,2 3,2 3,3 2,3 M3,2 4,2 4,3 3,3 M12,2 13,2 13,3 12,3 M13,2 14,2 14,3 13,3 M1,3 2,3 2,4 1,4 M2,3 15,3 15,4 2,4 M14,3 15,3 15,4 14,4 M1,4 2,4 2,5 1,5 M1,5 2,5 2,6 1,6 M1,6 2,6 2,7 1,7 M1,7 2,7 2,8 1,8 M1,8 2,8 2,9 1,9 M1,9 2,9 2,10 1,10 M1,10 2,10 2,11 1,11 M1,11 2,11 2,12 1,12 M1,12 2,12 2,13 1,13 M1,13 2,13 2,14 1,14 M14,4 15,4 15,5 14,5 M14,5 15,5 15,6 14,6 M14,6 15,6 15,7 14,7 M14,7 15,7 15,8 14,8 M14,8 15,8 15,9 14,9 M14,9 15,9 15,10 14,10 M14,10 15,10 15,11 14,11 M14,11 15,11 15,12 14,12 M14,12 15,12 15,13 14,13 M14,13 15,13 15,14 14,14 M2,13 15,13 15,14 2,14 ' fill='%23a0aa95'/%3E%3Cpath d='M3,5 4,5 4,6 3,6 M5,5 6,5 6,6 5,6 M7,5 8,5 8,6 7,6 M9,5 10,5 10,6 9,6 M11,5 12,5 12,6 11,6 M3,7 4,7 4,8 3,8 M5,7 6,7 6,8 5,8 M7,7 8,7 8,8 7,8 M9,7 10,7 10,8 9,8 M11,7 12,7 12,8 11,8 M3,9 4,9 4,10 3,10 M5,9 6,9 6,10 5,10 M7,9 8,9 8,10 7,10 M9,9 10,9 10,10 9,10 M11,9 12,9 12,10 11,10 ' fill='%23c4b550'/%3E%3C/svg%3E");
+
+    --clock-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M8,1 9,1 9,2 8,2 M7,2 8,2 8,3 7,3 M8,2 9,2 9,3 8,3 M9,2 10,2 10,3 9,3 M10,3 11,3 11,4 10,4 M11,4 12,4 12,5 11,5 M12,5 13,5 13,6 12,6 M13,6 14,6 14,7 13,7 M14,7 15,7 15,8 14,8 M14,8 15,8 15,9 14,9 M13,9 14,9 14,10 13,10 M12,10 13,10 13,11 12,11 M11,11 12,11 12,12 11,12 M10,12 11,12 11,13 10,13 M9,13 10,13 10,14 9,14 M8,14 9,14 9,15 8,15 M7,14 8,14 8,15 7,15 M6,13 7,13 7,14 6,14 M5,12 6,12 6,13 5,13 M4,11 5,11 5,12 4,12 M3,10 4,10 4,11 3,11 M2,9 3,9 3,10 2,10 M1,8 2,8 2,9 1,9 M1,7 2,7 2,8 1,8 M2,6 3,6 3,7 2,7 M3,5 4,5 4,6 3,6 M4,4 5,4 5,5 4,5 M5,3 6,3 6,4 5,4 M6,2 7,2 7,3 6,3 M7,1 8,1 8,2 7,2 M8,3 9,3 9,8 8,8 M8,7 9,7 9,8 8,8 M8,6 9,6 9,7 8,7 M8,5 9,5 9,6 8,6 M8,4 9,4 9,5 8,5 M8,7 9,7 9,8 8,8 M7,8 8,8 8,9 7,9 M6,8 7,8 7,9 6,9 M7,7 8,7 8,8 7,8 ' fill='%23a0aa95'/%3E%3Cpath d='M8,4 9,4 9,7 8,7 ' fill='%23c4b550'/%3E%3C/svg%3E");
 
     --font-body: tahoma, verdana, "Segoe UI", sans-serif;
     --font-heading: "Press Start 2P", serif;
@@ -273,7 +278,7 @@ blockquote {
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     border: 0.0625rem solid;
     border-color: var(--border-dark) var(--border-light) var(--border-light) var(--border-dark);
-    border-left-width: 0.25rem;
+    border-left-width: 0.5rem;
     background-color: var(--secondary-bg);
     color: var(--secondary-text);
 }
@@ -281,33 +286,41 @@ blockquote {
 table {
     width: 100%;
     border-collapse: collapse;
+    color: var(--text);
     font-size: 1rem;
     line-height: 0.9375rem;
-}
-
-thead th {
-    background-color: var(--secondary-bg);
-}
-
-tbody tr:nth-child(even) td {
-    background-color: color-mix(in srgb, var(--secondary-bg) 50%, transparent);
-}
-
-th,
-td {
-    padding: 0.25rem 0.5rem;
-    border: 0.0625rem solid;
-    border-color: var(--border-dark) var(--border-light) var(--border-light) var(--border-dark);
+    user-select: none;
 }
 
 th {
-    background-color: var(--secondary-bg);
-    color: var(--secondary-text);
+    background-color: var(--bg);
+    color: #FFF;
+    padding: 0.25rem 0.3125rem 0.1875rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 0.9375rem;
     text-align: left;
+    border: 0.0625rem solid;
+    border-color: var(--bevel-outset);
+    cursor: pointer;
+}
+
+th:active {
+    border-color: var(--bevel-inset);
 }
 
 td {
+    padding: 0.25rem 0.3125rem;
+    font-size: 1rem;
+    line-height: 0.9375rem;
+    background-color: var(--secondary-bg);
     color: var(--text);
+}
+
+tr:hover td {
+    background-color: var(--secondary-accent);
+    color: #FFF;
+    cursor: pointer;
 }
 
 img {
@@ -316,31 +329,89 @@ img {
     border-color: var(--border-light) var(--border-dark) var(--border-dark) var(--border-light);
 }
 
-details {
-    color: var(--secondary-text);
-    background-color: var(--bg);
-    border: 0.0625rem solid;
-    border-color: var(--bevel-outset);
-    padding: var(--space-sm);
-
-    &[open] > summary {
-        margin-bottom: var(--space-sm);
-    }
+details:not(.cs-dropdown-details) {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--text);
 }
 
-summary {
+details:not(.cs-dropdown-details) + details:not(.cs-dropdown-details) {
+    margin-top: var(--space-xs);
+}
+
+details:not(.cs-dropdown-details) > summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-sm);
+    min-height: 1.625rem;
+    margin: 0;
+    padding: var(--space-sm) var(--space-md);
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+    border: 0.0625rem solid;
+    border-color: var(--bevel-inset);
+    list-style: none;
     cursor: pointer;
-    color: var(--accent);
     user-select: none;
+}
 
-    &:hover {
-        color: #fff;
-    }
+details:not(.cs-dropdown-details) > summary::marker {
+    content: "";
+}
 
-    &:focus-visible {
-        outline: dotted 0.125rem var(--outline);
-        outline-offset: 0.125rem;
-    }
+details:not(.cs-dropdown-details) > summary::-webkit-details-marker {
+    display: none;
+}
+
+details:not(.cs-dropdown-details) > summary::after {
+    content: "";
+    flex-shrink: 0;
+    width: 0.4375rem;
+    height: 0.25rem;
+    background-image: var(--select-chevron);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+details:not(.cs-dropdown-details) > summary:hover {
+    color: #FFF;
+}
+
+details:not(.cs-dropdown-details) > summary:focus-visible {
+    outline: dotted 0.125rem var(--outline);
+    outline-offset: 0.125rem;
+}
+
+details:not(.cs-dropdown-details)[open] > summary {
+    margin-bottom: 0;
+    color: var(--accent);
+    border-bottom: none;
+}
+
+details:not(.cs-dropdown-details)[open] > summary::after {
+    transform: rotate(180deg);
+}
+
+details:not(.cs-dropdown-details) > summary ~ * {
+    margin: 0;
+    padding: var(--space-md);
+    background-color: var(--bg);
+    color: var(--text);
+    border: 0.0625rem solid;
+    border-color: var(--bevel-inset);
+    border-top: 0;
+}
+
+details:not(.cs-dropdown-details) > summary ~ * > :first-child {
+    margin-top: 0;
+}
+
+details:not(.cs-dropdown-details) > summary ~ * > :last-child {
+    margin-bottom: 0;
 }
 
 mark {
@@ -382,7 +453,7 @@ dd {
 
 button {
     background-color: var(--bg);
-    color: #fff;
+    color: #FFF;
     padding: var(--space-xs) 0.3125rem 0.1875rem;
     font-size: 1rem;
     line-height: 0.9375rem;
@@ -501,7 +572,7 @@ input[type="checkbox"] {
         }
 
         &:hover {
-            color: #fff;
+            color: #FFF;
         }
     }
 }
@@ -525,7 +596,7 @@ textarea {
 
     &::selection {
         background-color: var(--secondary-accent);
-        color: #fff;
+        color: #FFF;
     }
 
     &:disabled {
@@ -593,7 +664,7 @@ select {
 
         & option:checked {
             background: linear-gradient(var(--secondary-accent), var(--secondary-accent));
-            color: #fff;
+            color: #FFF;
         }
     }
 
@@ -754,7 +825,7 @@ input[type="file"]::file-selector-button {
     font-family: inherit;
     font-size: 1rem;
     line-height: 0.9375rem;
-    color: #fff;
+    color: #FFF;
     background-color: var(--bg);
     border: 0.0625rem solid;
     border-color: var(--bevel-outset);
@@ -796,6 +867,44 @@ input[type="color"]::-moz-color-swatch {
     border: 0.0625rem solid var(--border-dark);
 }
 
+/* Date & time inputs */
+
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"] {
+    min-width: 9.375rem;
+    padding-right: 1.75rem;
+    color-scheme: dark;
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+input[type="month"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="week"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 1;
+    width: 1rem;
+    height: 1rem;
+    margin-left: var(--space-xs);
+    background-color: transparent;
+    background-image: var(--calendar-icon);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator:hover,
+input[type="month"]::-webkit-calendar-picker-indicator:hover,
+input[type="time"]::-webkit-calendar-picker-indicator:hover,
+input[type="week"]::-webkit-calendar-picker-indicator:hover {
+    filter: brightness(1.25);
+}
+
 /* Validation */
 
 input:user-invalid,
@@ -803,7 +912,12 @@ textarea:user-invalid,
 select:user-invalid,
 input[aria-invalid="true"],
 textarea[aria-invalid="true"],
-select[aria-invalid="true"] {
+select[aria-invalid="true"],
+input[type="date"][aria-invalid="true"],
+input[type="datetime-local"][aria-invalid="true"],
+input[type="month"][aria-invalid="true"],
+input[type="time"][aria-invalid="true"],
+input[type="week"][aria-invalid="true"] {
     border-color: var(--alert-error) var(--border-dark) var(--border-dark) var(--alert-error);
 }
 
@@ -812,7 +926,12 @@ label:has(+ textarea:user-invalid),
 label:has(+ select:user-invalid),
 label:has(+ input[aria-invalid="true"]),
 label:has(+ textarea[aria-invalid="true"]),
-label:has(+ select[aria-invalid="true"]) {
+label:has(+ select[aria-invalid="true"]),
+label:has(+ input[type="date"][aria-invalid="true"]),
+label:has(+ input[type="datetime-local"][aria-invalid="true"]),
+label:has(+ input[type="month"][aria-invalid="true"]),
+label:has(+ input[type="time"][aria-invalid="true"]),
+label:has(+ input[type="week"][aria-invalid="true"]) {
     color: var(--alert-error);
 }
 
@@ -885,7 +1004,7 @@ dialog {
             .text {
                 font-size: 1rem;
                 line-height: 0.9375rem;
-                color: #fff;
+                color: #FFF;
             }
         }
     }
@@ -923,21 +1042,71 @@ dialog.cs-toast-error {
     border-left-color: var(--alert-error);
 }
 
-button.close,
-button.cs-close {
-    padding: 0;
-    width: 1.125rem;
-    height: 1.125rem;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M3,3 4,3 4,4 3,4 M4,3 5,3 5,4 4,4 M3,4 4,4 4,5 3,5 M4,4 5,4 5,5 4,5 M4,5 5,5 5,6 4,6 M5,5 6,5 6,6 5,6 M5,4 6,4 6,5 5,5 M5,6 6,6 6,7 5,7 M6,6 7,6 7,7 6,7 M6,5 7,5 7,6 6,6 M6,7 7,7 7,8 6,8 M6,8 7,8 7,9 6,9 M7,8 8,8 8,9 7,9 M7,7 8,7 8,8 7,8 M7,6 8,6 8,7 7,7 M8,6 9,6 9,7 8,7 M8,7 9,7 9,8 8,8 M8,8 9,8 9,9 8,9 M8,5 9,5 9,6 8,6 M9,5 10,5 10,6 9,6 M9,6 10,6 10,7 9,7 M9,4 10,4 10,5 9,5 M10,4 11,4 11,5 10,5 M10,5 11,5 11,6 10,6 M10,3 11,3 11,4 10,4 M11,3 12,3 12,4 11,4 M11,4 12,4 12,5 11,5 M9,8 10,8 10,9 9,9 M9,9 10,9 10,10 9,10 M8,9 9,9 9,10 8,10 M10,9 11,9 11,10 10,10 M10,10 11,10 11,11 10,11 M9,10 10,10 10,11 9,11 M11,10 12,10 12,11 11,11 M11,11 12,11 12,12 11,12 M10,11 11,11 11,12 10,12 M5,8 6,8 6,9 5,9 M5,9 6,9 6,10 5,10 M6,9 7,9 7,10 6,10 M4,9 5,9 5,10 4,10 M4,10 5,10 5,11 4,11 M5,10 6,10 6,11 5,11 M3,10 4,10 4,11 3,11 M3,11 4,11 4,12 3,12 M4,11 5,11 5,12 4,12 ' fill='%238c9284'/%3E%3C/svg%3E") no-repeat center center;
-}
-
-button.close:focus-visible,
-button.cs-close:focus-visible {
-    padding: 0;
-    outline: 0;
+dialog.cs-toast-success {
+    border-left-color: var(--alert-success);
 }
 
 /* Components */
+
+.cs-window {
+    background-color: var(--bg);
+    color: var(--text);
+    border: 0.0625rem solid;
+    border-color: var(--bevel-outset);
+    padding: var(--space-xs);
+}
+
+.cs-window .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.1875rem;
+    padding-left: 0.125rem;
+    font-size: 1rem;
+    line-height: 0.9375rem;
+    color: #FFF;
+    user-select: none;
+}
+
+.cs-window .content {
+    padding: 0.625rem;
+}
+
+pre.cs-console {
+    height: 15.625rem;
+    margin: 0;
+    padding: 0.9375rem;
+    overflow: hidden auto;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    white-space: pre-wrap;
+}
+
+pre.cs-console .log-time {
+    color: var(--text-3);
+    margin-right: 0.625rem;
+}
+
+pre.cs-console .log-cmd {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+pre.cs-console .log-output {
+    display: block;
+    margin-left: 1.25rem;
+    margin-bottom: 0.9375rem;
+}
+
+.blinking-cursor {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
 
 .cs-stack {
     display: flex;
@@ -1011,80 +1180,8 @@ button.cs-close:focus-visible {
     border-left-color: var(--alert-error);
 }
 
-.cs-accordion details {
-    margin: 0 0 var(--space-xs);
-    padding: 0;
-    border: 0;
-    background: transparent;
-}
-
-.cs-accordion details:last-child {
-    margin-bottom: 0;
-}
-
-.cs-accordion summary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--space-sm);
-    min-height: 1.6875rem;
-    padding: 0.25rem 0.3125rem;
-    background-color: var(--bg);
-    color: #fff;
-    font-size: 1rem;
-    line-height: 0.9375rem;
-    border: solid 0.0625rem var(--border-light);
-    border-right-color: var(--border-dark);
-    border-bottom-color: var(--border-dark);
-    list-style: none;
-}
-
-.cs-accordion summary::marker {
-    content: "";
-}
-
-.cs-accordion summary::-webkit-details-marker {
-    display: none;
-}
-
-.cs-accordion summary::after {
-    content: "";
-    flex-shrink: 0;
-    width: 0.4375rem;
-    height: 0.25rem;
-    background-image: var(--select-chevron);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.cs-accordion details[open] > summary {
-    margin-bottom: 0;
-    padding-bottom: 0.3125rem;
-    color: var(--accent);
-    border-bottom: none;
-}
-
-.cs-accordion details[open] > summary::after {
-    transform: rotate(180deg);
-}
-
-.cs-accordion-panel {
-    padding: var(--space-md);
-    background-color: var(--bg);
-    color: var(--text);
-    border-left: solid 0.0625rem var(--border-light);
-    border-bottom: solid 0.0625rem var(--border-dark);
-    border-right: solid 0.0625rem var(--border-dark);
-    border-top: solid 0.0625rem var(--border-light);
-}
-
-.cs-accordion-panel > :first-child {
-    margin-top: 0;
-}
-
-.cs-accordion-panel > :last-child {
-    margin-bottom: 0;
+.cs-alert-success {
+    border-left-color: var(--alert-success);
 }
 
 .cs-badge {
@@ -1103,7 +1200,7 @@ button.cs-close:focus-visible {
 
 .cs-badge-accent {
     background-color: var(--secondary-accent);
-    color: #fff;
+    color: #FFF;
     border-color: var(--border-dark) var(--border-light) var(--border-light) var(--border-dark);
 }
 
@@ -1183,7 +1280,7 @@ button.cs-close:focus-visible {
 }
 
 .cs-card-title {
-    color: #fff;
+    color: #FFF;
     font-size: 1rem;
     line-height: 0.9375rem;
 }
@@ -1243,74 +1340,6 @@ button.cs-close:focus-visible {
     min-height: 1rem;
 }
 
-.cs-collapsible {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-}
-
-.cs-collapsible > summary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--space-sm);
-    min-height: 1.625rem;
-    margin: 0;
-    padding: var(--space-sm) var(--space-md);
-    background-color: var(--secondary-bg);
-    color: var(--secondary-text);
-    border: 0.0625rem solid;
-    border-color: var(--bevel-inset);
-    list-style: none;
-}
-
-.cs-collapsible > summary::marker {
-    content: "";
-}
-
-.cs-collapsible > summary::-webkit-details-marker {
-    display: none;
-}
-
-.cs-collapsible > summary::after {
-    content: "";
-    flex-shrink: 0;
-    width: 0.4375rem;
-    height: 0.25rem;
-    background-image: var(--select-chevron);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.cs-collapsible[open] > summary {
-    margin-bottom: 0;
-    color: var(--accent);
-    border-bottom: none;
-}
-
-.cs-collapsible[open] > summary::after {
-    transform: rotate(180deg);
-}
-
-.cs-collapsible-panel {
-    padding: var(--space-md);
-    background-color: var(--bg);
-    color: var(--text);
-    border: 0.0625rem solid;
-    border-color: var(--bevel-inset);
-    border-top: 0;
-}
-
-.cs-collapsible-panel > :first-child {
-    margin-top: 0;
-}
-
-.cs-collapsible-panel > :last-child {
-    margin-bottom: 0;
-}
-
 .cs-dropdown {
     position: relative;
     display: inline-block;
@@ -1365,7 +1394,7 @@ button.cs-close:focus-visible {
 
 .cs-dropdown-menu [role="option"]:hover,
 .cs-dropdown-menu [role="option"]:focus {
-    color: #fff;
+    color: #FFF;
     background-color: color-mix(in srgb, var(--secondary-accent) 35%, var(--secondary-bg));
 }
 
@@ -1381,7 +1410,7 @@ button.cs-close:focus-visible {
 
 .cs-dropdown-menu [role="option"][aria-selected="true"]:hover,
 .cs-dropdown-menu [role="option"][aria-selected="true"]:focus {
-    color: #fff;
+    color: #FFF;
     background-color: color-mix(in srgb, var(--secondary-accent) 45%, var(--secondary-bg));
 }
 
@@ -1426,6 +1455,238 @@ button.cs-close:focus-visible {
     display: block;
     position: static;
     margin-top: var(--space-xs);
+}
+
+.cs-calendar {
+    display: inline-block;
+    min-width: 15.625rem;
+    padding: var(--space-xs);
+    background-color: var(--secondary-bg);
+    border: 0.0625rem solid;
+    border-color: var(--bevel-inset);
+    color: var(--text);
+    user-select: none;
+}
+
+.cs-calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    padding: var(--space-xs) var(--space-sm);
+    background-color: var(--bg);
+    border: 0.0625rem solid;
+    border-color: var(--bevel-outset);
+}
+
+.cs-calendar-title {
+    flex: 1;
+    text-align: center;
+    color: #FFF;
+    font-size: 1rem;
+    line-height: 0.9375rem;
+}
+
+.cs-calendar-nav {
+    min-width: 1.5rem;
+    padding: 0.125rem 0.375rem;
+}
+
+.cs-calendar-weekdays,
+.cs-calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.0625rem;
+}
+
+.cs-calendar-weekday {
+    padding: var(--space-xs) 0;
+    text-align: center;
+    color: var(--text-3);
+    font-size: 0.8125rem;
+    line-height: 0.9375rem;
+}
+
+.cs-calendar-grid {
+    margin-top: var(--space-xs);
+}
+
+.cs-calendar-day {
+    min-height: 1.75rem;
+    padding: 0.1875rem 0;
+    font-size: 0.8125rem;
+    line-height: 1;
+    text-align: center;
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+    border: 0.0625rem solid transparent;
+}
+
+.cs-calendar-day:hover:not(:disabled) {
+    background-color: var(--secondary-accent);
+    color: #FFF;
+    border-color: var(--border-dark);
+}
+
+.cs-calendar-day:focus-visible {
+    outline: dotted 0.125rem var(--outline);
+    outline-offset: -0.0625rem;
+}
+
+.cs-calendar-day-today {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.cs-calendar-day-selected,
+.cs-calendar-day[aria-selected="true"] {
+    background-color: var(--secondary-accent);
+    color: #FFF;
+}
+
+.cs-calendar-day-muted {
+    color: var(--text-3);
+    background-color: color-mix(in srgb, var(--secondary-bg) 65%, var(--bg));
+}
+
+.cs-calendar-day-muted:hover:not(:disabled) {
+    color: #FFF;
+}
+
+.cs-calendar-day-empty {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.cs-datepicker {
+    position: relative;
+    display: inline-block;
+    min-width: 9.375rem;
+    vertical-align: top;
+}
+
+.cs-datepicker-trigger {
+    width: 100%;
+    text-align: left;
+    padding-right: 1.75rem;
+    background-image: var(--calendar-icon);
+    background-repeat: no-repeat;
+    background-position: right var(--space-sm) top 50%;
+    background-size: 1rem 1rem;
+}
+
+.cs-datepicker-trigger:hover,
+.cs-datepicker-trigger:focus-visible {
+    filter: none;
+}
+
+.cs-datepicker-popup,
+.cs-timepicker-popup {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    top: 100%;
+    left: 0;
+    margin-top: var(--space-xs);
+    padding: var(--space-xs);
+    background-color: var(--bg);
+    border: 0.0625rem solid;
+    border-color: var(--bevel-outset);
+}
+
+.cs-datepicker:focus-within .cs-datepicker-popup {
+    display: block;
+}
+
+.cs-timepicker {
+    position: relative;
+    display: inline-block;
+    min-width: 6.25rem;
+    vertical-align: top;
+}
+
+.cs-timepicker-trigger {
+    width: 100%;
+    text-align: left;
+    padding-right: 1.75rem;
+    background-image: var(--clock-icon);
+    background-repeat: no-repeat;
+    background-position: right var(--space-sm) top 50%;
+    background-size: 1rem 1rem;
+}
+
+.cs-timepicker-trigger:hover,
+.cs-timepicker-trigger:focus-visible {
+    filter: none;
+}
+
+.cs-timepicker:focus-within .cs-timepicker-popup {
+    display: block;
+}
+
+.cs-timepicker-face {
+    display: flex;
+    align-items: stretch;
+    gap: var(--space-xs);
+    min-width: 9.375rem;
+    padding: var(--space-xs);
+    background-color: var(--secondary-bg);
+    border: 0.0625rem solid;
+    border-color: var(--bevel-inset);
+    user-select: none;
+}
+
+.cs-timepicker-column {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    gap: 0.0625rem;
+    min-width: 3.125rem;
+    max-height: 9.375rem;
+    overflow-y: auto;
+    padding: var(--space-xs);
+    background-color: var(--bg);
+    border: 0.0625rem solid;
+    border-color: var(--bevel-inset);
+}
+
+.cs-timepicker-separator {
+    display: flex;
+    align-items: center;
+    color: var(--accent);
+    font-size: 1rem;
+    line-height: 0.9375rem;
+    padding-top: 1.125rem;
+}
+
+.cs-timepicker-option {
+    width: 100%;
+    min-height: 1.5rem;
+    padding: 0.125rem 0;
+    font-size: 0.8125rem;
+    line-height: 1;
+    text-align: center;
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+    border: 0.0625rem solid transparent;
+}
+
+.cs-timepicker-option:hover {
+    background-color: var(--secondary-accent);
+    color: #FFF;
+    border-color: var(--border-dark);
+}
+
+.cs-timepicker-option:focus-visible {
+    outline: dotted 0.125rem var(--outline);
+    outline-offset: -0.0625rem;
+}
+
+.cs-timepicker-option-selected,
+.cs-timepicker-option[aria-selected="true"] {
+    background-color: var(--secondary-accent);
+    color: #FFF;
 }
 
 .cs-field {
@@ -1491,7 +1752,7 @@ button.cs-close:focus-visible {
 }
 
 .cs-list-group-item:hover {
-    color: #fff;
+    color: #FFF;
     background-color: color-mix(in srgb, var(--secondary-bg) 85%, var(--bg));
 }
 
@@ -1515,7 +1776,7 @@ button.cs-close:focus-visible {
 }
 
 .cs-navbar-title {
-    color: #fff;
+    color: #FFF;
     font-size: 1rem;
     line-height: 0.9375rem;
     user-select: none;
@@ -1547,7 +1808,7 @@ button.cs-close:focus-visible {
     padding: var(--space-xs) var(--space-sm) 0.1875rem;
     font-size: 1rem;
     line-height: 0.9375rem;
-    color: #fff;
+    color: #FFF;
     background-color: var(--bg);
     border: 0.0625rem solid;
     border-color: var(--bevel-outset);
@@ -1660,24 +1921,6 @@ button.cs-close:focus-visible {
     display: block;
 }
 
-.cs-progress-bar {
-    display: block;
-    width: 16.25rem;
-    height: 1.5rem;
-    padding: 0.1875rem;
-    box-sizing: border-box;
-    background-color: var(--secondary-bg);
-    border: 0.0625rem solid;
-    border-color: var(--bevel-inset);
-
-    .bars {
-        height: 100%;
-        background-color: var(--secondary-bg);
-        background-image: var(--progress-fill);
-        background-size: var(--progress-fill-size);
-    }
-}
-
 .cs-slider {
     display: flex;
     flex-direction: column-reverse;
@@ -1755,7 +1998,7 @@ button.cs-close:focus-visible {
 }
 
 .cs-switch:hover {
-    color: #fff;
+    color: #FFF;
 }
 
 .cs-switch-track {
@@ -1810,7 +2053,7 @@ button.cs-close:focus-visible {
     .label {
         cursor: pointer;
         font-size: 1rem;
-        color: #fff;
+        color: #FFF;
         line-height: 0.9375rem;
         height: 1.6875rem;
         padding: 0.25rem 0.3125rem;
@@ -1867,7 +2110,7 @@ button.cs-close:focus-visible {
 .cs-tooltip {
     position: relative;
     display: inline-block;
-    color: #fff;
+    color: #FFF;
     line-height: 1.25rem;
     user-select: none;
 

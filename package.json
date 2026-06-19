@@ -4,16 +4,21 @@
   "version": "0.0.0",
   "license": "MIT",
   "type": "module",
+  "browserslist": [
+    "chrome >= 109",
+    "firefox >= 115",
+    ">= 0.25%"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "pnpm run build:css",
-    "build:css": "node build-css.mjs",
+    "build": "vite build",
+    "preview": "pnpm build && cp dist/cs16.min.css preview/ && cp src/index.css preview/ && vite preview --outDir preview",
     "lint": "stylelint \"src/*.css\"",
-    "lint:fix": "stylelint \"src/*.css\" --fix",
-    "preview": "vite preview"
+    "lint:fix": "stylelint \"src/*.css\" --fix"
   },
-  "packageManager": "pnpm@11.6.0",
+  "packageManager": "pnpm@11.8.0",
   "devDependencies": {
+    "browserslist": "^4.28.2",
     "lightningcss": "^1.32.0",
     "stylelint": "^17.13.0",
     "stylelint-config-standard": "^40.0.0",

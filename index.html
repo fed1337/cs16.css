@@ -46,24 +46,6 @@
 sv_cheats 0
 mp_friendlyfire 1</pre>
         <blockquote>Fair play. Good luck have fun.</blockquote>
-        <table>
-            <thead>
-            <tr>
-                <th>Weapon</th>
-                <th>Cost</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>AK-47</td>
-                <td>$2500</td>
-            </tr>
-            <tr>
-                <td>M4A1</td>
-                <td>$3100</td>
-            </tr>
-            </tbody>
-        </table>
         <p>
             <img alt="Placeholder map thumbnail" height="60"
                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Crect width='120' height='60' fill='%233e4637'/%3E%3Ctext x='8' y='34' fill='%23a0aa95' font-family='tahoma' font-size='12'%3Ede_dust2%3C/text%3E%3C/svg%3E"
@@ -83,6 +65,37 @@ mp_friendlyfire 1</pre>
             <dt>Freeze time</dt>
             <dd>0:06</dd>
         </dl>
+    </section>
+
+    <section>
+        <h2>Table</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Servers</th>
+                <th>Players</th>
+                <th>Latency</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>KRONOSIPHON</td>
+                <td>12/32</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>BION</td>
+                <td>24/24</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>de_dust2 #1</td>
+                <td>8/16</td>
+                <td>42</td>
+            </tr>
+            </tbody>
+        </table>
+        <p><small>Hover rows and click headers for CS server-browser styling.</small></p>
     </section>
 
     <section>
@@ -153,7 +166,7 @@ mp_friendlyfire 1</pre>
             <button type="button">Down</button>
         </div>
         <br/><br/>
-        <button aria-label="Close" class="cs-close" id="demo-close" type="button"></button>
+        <button aria-label="Close" class="close" id="demo-close" type="button"></button>
     </section>
 
     <section>
@@ -215,9 +228,49 @@ mp_friendlyfire 1</pre>
     </section>
 
     <section>
+        <h2>Calendar</h2>
+        <div class="cs-calendar" id="demo-calendar" role="application" aria-label="Calendar"></div>
+    </section>
+
+    <section>
+        <h2>Datepicker</h2>
+        <p>
+            <small>Native date/time popups are OS-rendered. Use <code>.cs-datepicker</code> and
+                <code>.cs-timepicker</code> for fully CS-styled pickers.</small>
+        </p>
+        <div class="cs-field">
+            <label for="match-date-native">Match date (native)</label>
+            <input id="match-date-native" type="date" value="2026-06-18"/>
+        </div>
+        <div class="cs-field">
+            <label for="match-time-native">Match time (native)</label>
+            <input id="match-time-native" type="time" value="19:30"/>
+        </div>
+        <div class="cs-field">
+            <label for="demo-datepicker">Match date (CS)</label>
+            <div class="cs-datepicker" id="demo-datepicker" tabindex="-1">
+                <button aria-expanded="false" aria-haspopup="dialog" class="cs-datepicker-trigger" id="demo-datepicker-trigger" type="button">2026-06-18</button>
+                <div aria-label="Choose date" class="cs-datepicker-popup" role="dialog">
+                    <div class="cs-calendar" data-calendar></div>
+                </div>
+            </div>
+        </div>
+        <div class="cs-field">
+            <label for="demo-timepicker">Match time (CS)</label>
+            <div class="cs-timepicker" id="demo-timepicker" tabindex="-1">
+                <button aria-expanded="false" aria-haspopup="dialog" class="cs-timepicker-trigger" id="demo-timepicker-trigger" type="button">19:30</button>
+                <div aria-label="Choose time" class="cs-timepicker-popup" role="dialog">
+                    <div class="cs-timepicker-face" data-timepicker></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
         <h2>Dropdown</h2>
         <div class="cs-dropdown" id="demo-dropdown" tabindex="-1">
-            <button aria-expanded="false" aria-haspopup="listbox" class="cs-dropdown-trigger" type="button">de_dust2</button>
+            <button aria-expanded="false" aria-haspopup="listbox" class="cs-dropdown-trigger" type="button">de_dust2
+            </button>
             <ul class="cs-dropdown-menu" role="listbox">
                 <li aria-selected="true" role="option">de_dust2</li>
                 <li role="option">de_inferno</li>
@@ -329,10 +382,6 @@ mp_friendlyfire 1</pre>
 
     <section>
         <h2>Progress bar</h2>
-        <div class="cs-progress-bar">
-            <div class="bars" style="width: 50%;"></div>
-        </div>
-        <br/><br/>
         <label for="download-progress">Download progress</label>
         <progress id="download-progress" max="100" value="50"></progress>
     </section>
@@ -356,6 +405,27 @@ mp_friendlyfire 1</pre>
     </section>
 
     <section>
+        <h2>Window</h2>
+        <div class="cs-window" style="max-width: 21.875rem;">
+            <div class="heading">About Me</div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ad repellat in!
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Developer console</h2>
+        <pre class="cs-console" style="max-width: 37.5rem;"><span class="log-time">09:2024</span> <span class="log-cmd">] connect server</span>
+<span class="log-output">Connection established. Role assigned.</span>
+<span class="log-time">10:2024</span> <span class="log-cmd">] status</span>
+<span class="log-output">hostname: cs16.css server
+map: de_dust2
+players: 12/32</span>
+<span class="log-time">SYSTEM</span> <span class="log-cmd">] <span class="blinking-cursor">_</span></span></pre>
+    </section>
+
+    <section>
         <h2>Badge</h2>
         <p>
             <span class="cs-badge">VIP</span>
@@ -367,6 +437,7 @@ mp_friendlyfire 1</pre>
         <h2>Alert</h2>
         <div class="cs-stack">
             <div class="cs-alert" role="alert">Bomb planted at B.</div>
+            <div class="cs-alert cs-alert-success" role="alert">Counter-Terrorists win.</div>
             <div class="cs-alert cs-alert-warn" role="alert">Connection unstable.</div>
             <div class="cs-alert cs-alert-error" role="alert">Connection lost.</div>
         </div>
@@ -437,12 +508,27 @@ mp_friendlyfire 1</pre>
     </section>
 
     <section>
-        <h2>Collapsible</h2>
-        <details class="cs-collapsible">
+        <h2>Details</h2>
+        <p>
+            <small>Collapsible panels and accordion groups share the same native
+                <code>&lt;details&gt;</code> styling. Dropdowns use <code>.cs-dropdown-details</code> and are
+                unaffected.</small>
+        </p>
+        <details>
             <summary>Advanced options</summary>
-            <div class="cs-collapsible-panel">
-                <p>cl_righthand 1, fps_max 100, net_graph 1</p>
-            </div>
+            <p>cl_righthand 1, fps_max 100, net_graph 1</p>
+        </details>
+        <details open>
+            <summary>Audio</summary>
+            <p>Volume, quality settings.</p>
+        </details>
+        <details>
+            <summary>Video</summary>
+            <p>Resolution, brightness.</p>
+        </details>
+        <details>
+            <summary>Controls</summary>
+            <p>Key bindings, sensitivity.</p>
         </details>
     </section>
 
@@ -465,6 +551,7 @@ mp_friendlyfire 1</pre>
         <h2>Toast</h2>
         <p>
             <button id="toast-info" type="button">Bomb planted</button>
+            <button id="toast-success" type="button">Round won</button>
             <button id="toast-warn" type="button">Connection unstable</button>
             <button id="toast-error" type="button">Connection lost</button>
         </p>
@@ -484,30 +571,6 @@ mp_friendlyfire 1</pre>
             <span class="cs-switch-track"></span>
             <span class="cs-switch-label">Auto-buy</span>
         </label>
-    </section>
-
-    <section>
-        <h2>Accordion</h2>
-        <div class="cs-accordion">
-            <details open>
-                <summary>Audio</summary>
-                <div class="cs-accordion-panel">
-                    <p>Volume, quality settings.</p>
-                </div>
-            </details>
-            <details>
-                <summary>Video</summary>
-                <div class="cs-accordion-panel">
-                    <p>Resolution, brightness.</p>
-                </div>
-            </details>
-            <details>
-                <summary>Controls</summary>
-                <div class="cs-accordion-panel">
-                    <p>Key bindings, sensitivity.</p>
-                </div>
-            </details>
-        </div>
     </section>
 
     <section>
@@ -568,6 +631,303 @@ mp_friendlyfire 1</pre>
             });
         }
 
+        const MONTHS = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December",
+        ];
+        const WEEKDAYS = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"];
+
+        function parseIsoDate(value) {
+            const [year, month, day] = value.split("-").map(Number);
+            return new Date(year, month - 1, day);
+        }
+
+        function toIsoLocal(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, "0");
+            const day = String(date.getDate()).padStart(2, "0");
+            return `${year}-${month}-${day}`;
+        }
+
+        function mondayIndex(date) {
+            const day = date.getDay();
+            return day === 0 ? 6 : day - 1;
+        }
+
+        function isSameDay(a, b) {
+            return a.getFullYear() === b.getFullYear()
+                && a.getMonth() === b.getMonth()
+                && a.getDate() === b.getDate();
+        }
+
+        function initCalendar(root, options = {}) {
+            if (!root) {
+                return;
+            }
+
+            const selected = options.selected ? parseIsoDate(options.selected) : new Date();
+            const today = new Date();
+            let viewYear = selected.getFullYear();
+            let viewMonth = selected.getMonth();
+            let selectedIso = toIsoLocal(selected);
+
+            root.replaceChildren();
+
+            const header = document.createElement("div");
+            header.className = "cs-calendar-header";
+
+            const prev = document.createElement("button");
+            prev.type = "button";
+            prev.className = "cs-calendar-nav";
+            prev.setAttribute("aria-label", "Previous month");
+            prev.textContent = "‹";
+
+            const title = document.createElement("div");
+            title.className = "cs-calendar-title";
+            title.setAttribute("aria-live", "polite");
+
+            const next = document.createElement("button");
+            next.type = "button";
+            next.className = "cs-calendar-nav";
+            next.setAttribute("aria-label", "Next month");
+            next.textContent = "›";
+
+            header.append(prev, title, next);
+
+            const weekdays = document.createElement("div");
+            weekdays.className = "cs-calendar-weekdays";
+            weekdays.setAttribute("role", "row");
+            WEEKDAYS.forEach((label) => {
+                const cell = document.createElement("div");
+                cell.className = "cs-calendar-weekday";
+                cell.setAttribute("role", "columnheader");
+                cell.textContent = label;
+                weekdays.appendChild(cell);
+            });
+
+            const grid = document.createElement("div");
+            grid.className = "cs-calendar-grid";
+            grid.setAttribute("role", "grid");
+
+            root.append(header, weekdays, grid);
+
+            function render() {
+                title.textContent = `${MONTHS[viewMonth]} ${viewYear}`;
+                grid.replaceChildren();
+
+                const firstOfMonth = new Date(viewYear, viewMonth, 1);
+                const leading = mondayIndex(firstOfMonth);
+                const daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
+                const prevMonthDays = new Date(viewYear, viewMonth, 0).getDate();
+                const totalCells = Math.ceil((leading + daysInMonth) / 7) * 7;
+
+                for (let index = 0; index < totalCells; index += 1) {
+                    const button = document.createElement("button");
+                    button.type = "button";
+                    button.className = "cs-calendar-day";
+                    button.setAttribute("role", "gridcell");
+
+                    let cellDate;
+                    let muted = false;
+
+                    if (index < leading) {
+                        const day = prevMonthDays - leading + index + 1;
+                        cellDate = new Date(viewYear, viewMonth - 1, day);
+                        muted = true;
+                    } else if (index >= leading + daysInMonth) {
+                        const day = index - leading - daysInMonth + 1;
+                        cellDate = new Date(viewYear, viewMonth + 1, day);
+                        muted = true;
+                    } else {
+                        const day = index - leading + 1;
+                        cellDate = new Date(viewYear, viewMonth, day);
+                    }
+
+                    const iso = toIsoLocal(cellDate);
+                    button.textContent = String(cellDate.getDate());
+                    button.dataset.date = iso;
+
+                    if (muted) {
+                        button.classList.add("cs-calendar-day-muted");
+                    }
+
+                    if (isSameDay(cellDate, today)) {
+                        button.classList.add("cs-calendar-day-today");
+                    }
+
+                    if (iso === selectedIso) {
+                        button.classList.add("cs-calendar-day-selected");
+                        button.setAttribute("aria-selected", "true");
+                    }
+
+                    button.addEventListener("click", () => {
+                        selectedIso = iso;
+                        options.onSelect?.(iso);
+                        render();
+                    });
+
+                    grid.appendChild(button);
+                }
+            }
+
+            prev.addEventListener("click", () => {
+                if (viewMonth === 0) {
+                    viewMonth = 11;
+                    viewYear -= 1;
+                } else {
+                    viewMonth -= 1;
+                }
+                render();
+            });
+
+            next.addEventListener("click", () => {
+                if (viewMonth === 11) {
+                    viewMonth = 0;
+                    viewYear += 1;
+                } else {
+                    viewMonth += 1;
+                }
+                render();
+            });
+
+            render();
+        }
+
+        initCalendar(document.getElementById("demo-calendar"), {selected: "2026-06-18"});
+
+        const datepicker = document.getElementById("demo-datepicker");
+        const datepickerTrigger = document.getElementById("demo-datepicker-trigger");
+        const datepickerCalendar = datepicker?.querySelector("[data-calendar]");
+
+        if (datepicker && datepickerTrigger && datepickerCalendar) {
+            initCalendar(datepickerCalendar, {
+                selected: datepickerTrigger.textContent.trim(),
+                onSelect(iso) {
+                    datepickerTrigger.textContent = iso;
+                    datepickerTrigger.focus();
+                },
+            });
+
+            datepicker.addEventListener("focusin", () => {
+                datepickerTrigger.setAttribute("aria-expanded", "true");
+            });
+            datepicker.addEventListener("focusout", (event) => {
+                if (!datepicker.contains(event.relatedTarget)) {
+                    datepickerTrigger.setAttribute("aria-expanded", "false");
+                }
+            });
+        }
+
+        function parseTime(value) {
+            const [hours, minutes] = value.split(":").map(Number);
+            return {hours, minutes};
+        }
+
+        function formatTime(hours, minutes) {
+            return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}`;
+        }
+
+        function initTimepicker(root, options = {}) {
+            if (!root) {
+                return;
+            }
+
+            const initial = parseTime(options.selected || "00:00");
+            let selectedHours = initial.hours;
+            let selectedMinutes = initial.minutes;
+
+            root.replaceChildren();
+
+            const hoursColumn = document.createElement("div");
+            hoursColumn.className = "cs-timepicker-column";
+            hoursColumn.setAttribute("role", "listbox");
+            hoursColumn.setAttribute("aria-label", "Hours");
+
+            const separator = document.createElement("div");
+            separator.className = "cs-timepicker-separator";
+            separator.setAttribute("aria-hidden", "true");
+            separator.textContent = ":";
+
+            const minutesColumn = document.createElement("div");
+            minutesColumn.className = "cs-timepicker-column";
+            minutesColumn.setAttribute("role", "listbox");
+            minutesColumn.setAttribute("aria-label", "Minutes");
+
+            root.append(hoursColumn, separator, minutesColumn);
+
+            function updateSelection() {
+                const time = formatTime(selectedHours, selectedMinutes);
+                hoursColumn.querySelectorAll(".cs-timepicker-option").forEach((button) => {
+                    const selected = Number(button.dataset.value) === selectedHours;
+                    button.classList.toggle("cs-timepicker-option-selected", selected);
+                    button.setAttribute("aria-selected", String(selected));
+                });
+                minutesColumn.querySelectorAll(".cs-timepicker-option").forEach((button) => {
+                    const selected = Number(button.dataset.value) === selectedMinutes;
+                    button.classList.toggle("cs-timepicker-option-selected", selected);
+                    button.setAttribute("aria-selected", String(selected));
+                });
+                options.onSelect?.(time);
+            }
+
+            for (let hour = 0; hour < 24; hour += 1) {
+                const button = document.createElement("button");
+                button.type = "button";
+                button.className = "cs-timepicker-option";
+                button.setAttribute("role", "option");
+                button.dataset.value = String(hour);
+                button.textContent = String(hour).padStart(2, "0");
+                button.addEventListener("click", () => {
+                    selectedHours = hour;
+                    updateSelection();
+                });
+                hoursColumn.appendChild(button);
+            }
+
+            for (let minute = 0; minute < 60; minute += 1) {
+                const button = document.createElement("button");
+                button.type = "button";
+                button.className = "cs-timepicker-option";
+                button.setAttribute("role", "option");
+                button.dataset.value = String(minute);
+                button.textContent = String(minute).padStart(2, "0");
+                button.addEventListener("click", () => {
+                    selectedMinutes = minute;
+                    updateSelection();
+                });
+                minutesColumn.appendChild(button);
+            }
+
+            updateSelection();
+
+            const selectedHourButton = hoursColumn.querySelector(`[data-value="${selectedHours}"]`);
+            const selectedMinuteButton = minutesColumn.querySelector(`[data-value="${selectedMinutes}"]`);
+            selectedHourButton?.scrollIntoView({block: "center"});
+            selectedMinuteButton?.scrollIntoView({block: "center"});
+        }
+
+        const timepicker = document.getElementById("demo-timepicker");
+        const timepickerTrigger = document.getElementById("demo-timepicker-trigger");
+        const timepickerFace = timepicker?.querySelector("[data-timepicker]");
+
+        if (timepicker && timepickerTrigger && timepickerFace) {
+            initTimepicker(timepickerFace, {
+                selected: timepickerTrigger.textContent.trim(),
+                onSelect(time) {
+                    timepickerTrigger.textContent = time;
+                },
+            });
+
+            timepicker.addEventListener("focusin", () => {
+                timepickerTrigger.setAttribute("aria-expanded", "true");
+            });
+            timepicker.addEventListener("focusout", (event) => {
+                if (!timepicker.contains(event.relatedTarget)) {
+                    timepickerTrigger.setAttribute("aria-expanded", "false");
+                }
+            });
+        }
+
         const popover = document.getElementById("demo-popover");
         const popoverTrigger = popover?.querySelector("button");
         popoverTrigger?.addEventListener("click", () => {
@@ -620,6 +980,9 @@ mp_friendlyfire 1</pre>
 
         document.getElementById("toast-info")?.addEventListener("click", () => {
             showToast("", "Bomb planted", "Site B. 40 seconds.");
+        });
+        document.getElementById("toast-success")?.addEventListener("click", () => {
+            showToast("success", "Round won", "Counter-Terrorists win.");
         });
         document.getElementById("toast-warn")?.addEventListener("click", () => {
             showToast("warn", "Connection unstable", "Retrying…");
